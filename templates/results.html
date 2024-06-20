@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <ul>
+    {% for doc_id, score in results %}
+        <li>Document {{ doc_id }}: {{ score }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
